@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local tooling & abandoned marketing-site artifacts
+.claude/
+/shots/
+/scripts/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
