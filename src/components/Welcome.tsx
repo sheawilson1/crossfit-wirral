@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { GYM } from "@/lib/seed";
+import { asset } from "@/lib/asset";
 
 export function Welcome() {
   const { signIn } = useStore();
@@ -11,7 +12,7 @@ export function Welcome() {
     <div className="relative flex min-h-[100dvh] flex-col overflow-hidden bg-[#08090a] text-[#f1eee7]">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(/gym/p03.jpg)" }}
+        style={{ backgroundImage: `url(${asset("/gym/p03.jpg")})` }}
         aria-hidden
       />
       <div
@@ -30,7 +31,7 @@ export function Welcome() {
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/brand/logo-wordmark.png"
+          src={asset("/brand/logo-wordmark.png")}
           alt="CrossFit Wirral"
           className="mb-5 w-[78%] max-w-[300px]"
         />

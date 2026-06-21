@@ -23,9 +23,10 @@ import {
   weekdayShort,
 } from "@/lib/format";
 import { Avatar, Sheet } from "@/components/ui";
+import { asset } from "@/lib/asset";
 
 function photoFor(seed: string) {
-  return `/gym/p${String(1 + (hashStr(seed) % 15)).padStart(2, "0")}.jpg`;
+  return asset(`/gym/p${String(1 + (hashStr(seed) % 15)).padStart(2, "0")}.jpg`);
 }
 
 function greeting() {

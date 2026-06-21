@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   description:
     "The CrossFit Wirral member app — book classes, view the workout, log scores on the whiteboard, and track your progress.",
   icons: {
-    icon: "/brand/logo-mark.png",
-    apple: "/brand/logo-mark.png",
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/logo-mark.png`,
+    apple: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/logo-mark.png`,
   },
   appleWebApp: {
     capable: true,
